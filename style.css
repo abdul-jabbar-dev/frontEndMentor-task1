@@ -1,0 +1,219 @@
+* {
+
+    color: hsl(225, 20%, 60%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+
+}
+
+ul li {
+    list-style-image: url("./images/icon-check.svg")
+}
+
+.darkMode {
+    background-color: #141D2B;
+    color: #e6e6e6;
+}
+
+/* range  */
+input[type=range] {
+    height: 37px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #A0E6DE;
+    border-radius: 50px;
+    border: 0px solid #000000;
+}
+
+input[type=range] {
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    /* box-shadow: 2px 2px 10px #6CCCBF; */
+    border: 0px solid #2497E3;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+    background: #7EEDDE;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #A0E6DE;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #A0E6DE;
+    border-radius: 50px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 2px 2px 10px #6CCCBF;
+
+    border: 0px solid #2497E3;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+    background: #7EEDDE;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #A0E6DE;
+    border: 0px solid #000000;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #A0E6DE;
+    border: 0px solid #000000;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 2px 2px 10px #6CCCBF;
+    border: 0px solid #2497E3;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+    background: #7EEDDE;
+    cursor: pointer;
+}
+
+
+input[type=range]::-webkit-slider-thumb:active {
+    background-position: center;
+    cursor: grab !important;
+    background-color: #21AFA2 !important;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+
+}
+
+element.style input[type=range]:focus::-ms-fill-lower {
+    cursor: pointer;
+    background: #A0E6DE;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    cursor: pointer;
+    background: #A0E6DE;
+}
+
+
+
+@media only screen and (max-width: 2000px) {
+    #priceRange {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .resFlex {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #priceRange {
+        width: 90%;
+    }
+}
+
+/* toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+input:checked+.slider {
+    background-color: #7AF0E3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #7AF0E3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

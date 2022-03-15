@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- bootstrap 5 cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body" class="my-5">
+ <span class="mx-5">
+    Day
+    <label class="switch">
+      <input type="checkbox" id="toggleColor">
+      <span class="slider round"></span>
+    </label>
+    Dark
+ </span>
+  <div style="min-width: 200px; " class="container-sm text-center">
+
+    <div class="d-flex flex-column justify-content-center align-items-center my-5">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+        <g fill="transparent" fill-rule="transparent" class="titleRoundLogo" stroke="rgb(207,216,239)">
+          <circle cx="63" cy="82" r="62.5" />
+          <circle cx="105" cy="41" r="40.5" />
+        </g>
+      </svg>
+
+      <div class="position-absolute bg-transparent">
+        <h2 style="color:#293356;" class="textToggle">Simple, Traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+
+    </div>
+
+    <div class="d-flex justify-content-evenly my-5">
+      <span>
+        <p><small style="letter-spacing: 2px;"> <span id="pageviews">100K</span> PAGEVIEWS</small></p>
+
+      </span>
+      <span>
+        <h1 style="color: hsl(227, 35%, 25%)" id="price" class="d-inline fw-bolder">$16.00</h1>
+        <h6 class="d-inline"><small>/month</small></h6>
+      </span>
+    </div>
+    <input class="" type="range" name="" id="priceRange" value="60" min="0" max="100" step="20"><br>
+
+    <span>
+      <p class="d-inline">Monthly Billing</p> &nbsp;
+      <label class="switch">
+        <input type="checkbox" id="billingTime" checked>
+        <span id="toggle" class="slider roundToggle round"></span>
+      </label>
+      <p class="d-inline">Yearly Billing &nbsp;<small style="color:   hsl(15, 100%, 70%);">25% discount</small></p>
+    </span>
+    <div class="d-flex justify-content-evenly align-items-center mt-5 resFlex">
+      <ul class="text-start">
+        <li><small>Unlimited websites</small></li>
+        <li><small>100% data ownership</small></li>
+        <li><small>Email reports</small></li>
+      </ul>
+      <div>
+        <button id="submitButtn" style="
+          color: hsl(226, 100%, 87%);
+          border: none;
+          font-size: 12px ;
+          background-color:hsl(227, 35%, 25%) ;
+          " class="py-2 px-4 rounded-pill">Start my trial</button>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around " id="result"></div>
+  </div>
+
+  <!-- bootstrap 5 js bundil cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+
+</html>
