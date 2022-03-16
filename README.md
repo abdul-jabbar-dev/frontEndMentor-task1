@@ -1,3 +1,16 @@
+﻿# Dev-msg
+live url: https://abduljabbartask.netlify.app/
+
+1. use npm install for download dependencies (node_module).
+2. and use npm start 
+
+//I will create the webpage in extra-interactive-pricing-pureHtml with pure html css and js.
+
+Dev: Abdul jabbar
+email: abdullah1532002@gmail.com
+
+
+
 # Frontend Mentor - Interactive pricing component
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
@@ -103,3 +116,4 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+

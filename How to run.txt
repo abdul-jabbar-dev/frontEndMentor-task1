@@ -1,0 +1,10 @@
+live url: https://abduljabbartask.netlify.app/
+
+1. use npm install for download dependencies (node_module).
+2. and use npm start 
+
+
+//I will create the webpage in extra-interactive-pricing-pureHtml with pure html css and js.
+
+Dev: Abdul jabbar
+email: abdullah1532002@gmail.com
